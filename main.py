@@ -390,7 +390,6 @@ def plot_by_country(data, type_art):
 
 
 def main():
-    print('hey')
     journal_title = 'Nat Commun.'
     records = retrieve_all_records(journal_title=journal_title)
     # records = load_records(journal_title=journal_title)

@@ -240,7 +240,7 @@ def plot_by_year_country(data, art_type, countries):
 
     plt.xlabel('Year of publication')
     plt.ylabel('Country affiliation of the first author (%)')
-    plt.xlim(min(data.keys())-2, max(data.keys())+2)
+    # plt.xlim(min(data.keys())-2, max(data.keys())+2)
     #plt.ylim(-2, 102)
     ax.spines['top'].set_color('none')
     ax.spines['right'].set_color('none')
@@ -390,7 +390,8 @@ def plot_by_country(data, type_art):
 
 
 def main():
-    journal_title = 'Nat Hum Behav'
+    print('hey')
+    journal_title = 'Nat Commun.'
     records = retrieve_all_records(journal_title=journal_title)
     # records = load_records(journal_title=journal_title)
     countries = load_countries()
